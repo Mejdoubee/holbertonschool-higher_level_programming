@@ -1,5 +1,8 @@
 # Python - if/else, loops, functions
 
+
+*Note: More files related to this project can be found in the GitHub repository associated with my previous account. Due to account issues, some files are temporarily hosted there.*
+
 #### [`0-positive_or_negative.py`][0]
 #### [`1-last_digit.py`][1]
 #### [`2-print_alphabet.py`][2]
@@ -16,7 +19,7 @@
 #### [`100-print_tebahpla.py`][100]
 #### [`101-remove_char_at.py`][101]
 
-*Note: More files related to this project can be found in the GitHub repository associated with my previous account. Due to account issues, some files are temporarily hosted there.*
+
 
 [0]: https://github.com/Mejdoubee/holbertonschool-higher_level_programming/blob/main/python-if_else_loops_functions/0-positive_or_negative.py
 [1]: https://github.com/Mejdoubee/holbertonschool-higher_level_programming/blob/main/python-if_else_loops_functions/1-last_digit.py
