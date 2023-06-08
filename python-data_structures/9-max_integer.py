@@ -6,5 +6,5 @@ def max_integer(my_list=[]):
             if hold_max < my_list[i]:
                 hold_max = my_list[i]
             return hold_max
-    else:
-        return None
+        else:
+            return None
