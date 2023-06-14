@@ -3,15 +3,19 @@
 
 ### [`0-python-hello_world`][0]
 ### [`1-python-if_else_loops_functions`][1]
-*Note: More files related to project  [`0-python-hello_world`][0] and [`1-python-if_else_loops_functions`][1] can be found in the GitHub repository associated with my previous account. Due to account issues, some files are temporarily hosted there.*
+### [`2-python-import_modules`][2]
+### [`3-python-if_else_loops_functions`][3]
+### [`4-python-data_structures`][4]
+### [`5-python-more_data_structures`][5]
+### [`6-python-classes`][6]
 
-
-
-### [`3-python-import_modules`][2]
 
 
 
 [0]: https://github.com/Mejdoubee/holbertonschool-higher_level_programming/tree/main/python-hello_world
-[1]: https://github.com/MejdoubDev/holbertonschool-higher_level_programming/tree/main/python-if_else_loops_functions
-[2]: https://github.com/MejdoubDev/holbertonschool-higher_level_programming/tree/main/python-import_modules
-
+[1]: https://github.com/Mejdoubee/holbertonschool-higher_level_programming/tree/main/python-if_else_loops_functions
+[2]: https://github.com/Mejdoubee/holbertonschool-higher_level_programming/tree/main/python-import_modules
+[3]: https://github.com/Mejdoubee/holbertonschool-higher_level_programming/tree/main/python-if_else_loops_functions
+[4]: https://github.com/Mejdoubee/holbertonschool-higher_level_programming/tree/main/python-data_structures
+[5]: https://github.com/Mejdoubee/holbertonschool-higher_level_programming/tree/main/python-more_data_structures
+[6]: https://github.com/Mejdoubee/holbertonschool-higher_level_programming/tree/main/python-classes
