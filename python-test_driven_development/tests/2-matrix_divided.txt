@@ -35,13 +35,16 @@ Traceback (most recent call last):
 ...
 TypeError: matrix_divided() missing 1 required positional argument: 'div'
 
-**incorrect name of matrix**
->>> print(matrix_divided(a, 3))
-...
-NameError: name 'a' is not defined
-
 **None matrix**
 >>> print(matrix_divided(None, 3))
 Traceback (most recent call last):
 ...
 TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+
+**Inconsistent row sizes in matrix**
+>>> _matrix = [[1, 2, 3], [4, 5]]
+>>> print(matrix_divided(_matrix, 3))
+Traceback (most recent call last):
+...
+TypeError: Each row of the matrix must have the same size
