@@ -8,9 +8,7 @@ which adds two numbers together.
 
 def add_integer(a, b=98):
     """
-    a: The first number. Must be an integer or float.
-    b: The second number. Must be an integer or float. Default is 98.
-    Returns: The sum of a and b as int
+    Adds two numbers (a, b) together. Both must be int or float. Returns int sum.
     """
     if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")
