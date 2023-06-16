@@ -10,6 +10,14 @@ Using ``add_integer``
 >>> add_integer(1, 2)
 3
 
+**negative input**
+>>> add_integer(-5, -5)
+-10
+
+**1 argument**
+>>> add_integer(1)
+99
+
 **add 2 floats"
 >>> add_integer(3.6, 2.4)
 5
