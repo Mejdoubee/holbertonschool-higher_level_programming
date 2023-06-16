@@ -1,5 +1,4 @@
-
- # # Testing Python Functions in Interactive Mode
+# Testing Python Functions in Interactive Mode
 
 Testing your Python functions in interactive mode is a great way to see the output in real time and to quickly understand how your code behaves under different conditions. This guide will walk you through the steps to interactively test a Python function and document your findings.
 
