@@ -48,7 +48,6 @@ Traceback (most recent call last):
 ...
 ValueError: cannot convert float NaN to integer
 
-
 **Boolean input**
 
 >>> add_integer(True, 5)
