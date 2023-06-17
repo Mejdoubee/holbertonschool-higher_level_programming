@@ -1,0 +1,40 @@
+The ``5-text_indentation`` module
+======================
+
+Using ``text_indentation``
+-------------------
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+**Passing normal string** 
+>>> text_indentation("String is string")
+String is string
+
+**Passing string with ":" **
+>>> text_indentation("Holberton : School")
+Holberton :
+<BLANKLINE>
+School
+
+**Passing string with : ? .**
+>>> text_indentation("Holberton. : School?")
+Holberton.
+<BLANKLINE>
+:
+<BLANKLINE>
+School?
+<BLANKLINE>
+<BLANKLINE>
+
+**Passing None as input**
+>>> text_indentation(None)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+
+**No argument passed**
+>>> text_indentation()
+Traceback (most recent call last):
+...
+TypeError: text_indentation() missing 1 required positional argument: 'text'
