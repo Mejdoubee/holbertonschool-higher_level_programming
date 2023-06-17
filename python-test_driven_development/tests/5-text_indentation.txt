@@ -16,16 +16,6 @@ Holberton :
 <BLANKLINE>
 School
 
-**Passing string with : ? .**
->>> text_indentation("Holberton. : School?")
-Holberton.
-<BLANKLINE>
-:
-<BLANKLINE>
-School?
-<BLANKLINE>
-<BLANKLINE>
-
 **Passing None as input**
 >>> text_indentation(None)
 Traceback (most recent call last):
@@ -38,3 +28,35 @@ TypeError: text must be a string
 Traceback (most recent call last):
 ...
 TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+
+**Empty string**
+>>> text_indentation("")
+<BLANKLINE>
+
+**only punctuation characters**
+>>> text_indentation(".?:")
+.
+<BLANKLINE>
+?
+<BLANKLINE>
+:
+<BLANKLINE>
+<BLANKLINE>
+
+**String with leading and trailing spaces**
+>>> text_indentation("     This is a test.     ")
+This is a test.
+<BLANKLINE>
+<BLANKLINE>
+
+**String with spaces around punctuation characters**
+text_indentation("Hello . World : Python ? Cool")
+Hello .
+<BLANKLINE>	
+World :
+<BLANKLINE>
+Python ?
+<BLANKLINE>
+Cool
+<BLANKLINE>
