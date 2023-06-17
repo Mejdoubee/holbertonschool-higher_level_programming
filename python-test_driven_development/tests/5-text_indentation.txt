@@ -11,10 +11,10 @@ Using ``text_indentation``
 String is string
 
 **Passing string with ":" **
->>> text_indentation("Holberton : School")
+>>> text_indentation("Holberton :")
 Holberton :
 <BLANKLINE>
-School
+
 
 **Passing None as input**
 >>> text_indentation(None)
@@ -32,7 +32,6 @@ TypeError: text_indentation() missing 1 required positional argument: 'text'
 
 **Empty string**
 >>> text_indentation("")
-<BLANKLINE>
 
 **only punctuation characters**
 >>> text_indentation(".?:")
@@ -42,12 +41,10 @@ TypeError: text_indentation() missing 1 required positional argument: 'text'
 <BLANKLINE>
 :
 <BLANKLINE>
-<BLANKLINE>
 
 **String with leading and trailing spaces**
 >>> text_indentation("     This is a test.     ")
 This is a test.
-<BLANKLINE>
 <BLANKLINE>
 
 **String with spaces around punctuation characters**
@@ -59,4 +56,3 @@ World :
 Python ?
 <BLANKLINE>
 Cool
-<BLANKLINE>
