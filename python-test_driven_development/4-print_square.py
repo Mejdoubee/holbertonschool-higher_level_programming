@@ -8,10 +8,8 @@ made up of the character '#'.
 def print_square(size):
     '''
     Prints a square with the character '#'.
-
     Args:
         size (int): The length of the square's sides.
-
     Raises:
         TypeError: If size is not an integer.
         ValueError: If size is less than 0.
