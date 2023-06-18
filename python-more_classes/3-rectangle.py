@@ -52,4 +52,4 @@ class Rectangle:
                 rectang += '#' * self.__width
                 if i != self.__height - 1:
                     rectang += '\n'
-            return rectang
+        return rectang
