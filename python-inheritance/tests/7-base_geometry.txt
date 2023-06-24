@@ -59,3 +59,22 @@ Traceback (most recent call last):
 ...
 Exception: area() is not implemented
 
+**Module docstring:**
+>>> test = __import__("7-base_geometry").__doc__
+>>> len(test) > 1
+True
+
+**Class docstring**
+>>> test = __import__("7-base_geometry").BaseGeometry.__doc__
+>>> len(test) > 1
+True
+
+**Area Method docstring**
+>>> test = __import__("7-base_geometry").BaseGeometry.area.__doc__
+>>> len(test) > 1
+True
+
+**integer_validator Method docstring**
+>>> test = __import__("7-base_geometry").BaseGeometry.integer_validator.__doc__
+>>> len(test) > 1
+True
