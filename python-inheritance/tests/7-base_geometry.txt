@@ -33,3 +33,29 @@ TypeError: BaseGeometry.integer_validator() missing 2 required positional argume
 Traceback (most recent call last):
 ...
 TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
+
+**3 arg**
+>>> bg.integer_validator('str', 1, 5)
+Traceback (most recent call last):
+...
+TypeError: BaseGeometry.integer_validator() takes 3 positional arguments but 4 were given
+
+**Name Error**
+>>> bg.integer_validator(test, 2)
+Traceback (most recent call last):
+...
+NameError: name 'test' is not defined
+
+
+**Too many arg**
+>>> bg.area(1)
+Traceback (most recent call last):
+...
+TypeError: BaseGeometry.area() takes 1 positional argument but 2 were given
+
+**0 arg for area func**
+>>> bg.area()
+Traceback (most recent call last):
+...
+Exception: area() is not implemented
+
