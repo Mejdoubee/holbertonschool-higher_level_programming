@@ -7,8 +7,6 @@ Using ``integer_validator``
 >>> bg = BaseGeometry()
 
 **Basic input**
->>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
->>> bg = BaseGeometry()
 >>> bg.integer_validator("Value", 1)
 
 **Negative value**
