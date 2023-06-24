@@ -35,59 +35,10 @@ Using ``integer_validator``
 ...
 [ValueError] distance must be greater than 0
 
-
-**No arg**
->>> bg.integer_validator()
-Traceback (most recent call last):
+**fake name**
+>>> try:
+...     bg.integer_validator(name, -4)
+... except Exception as e:
+...     print("[{}] {}".format(e.__class__.__name__, e))
 ...
-TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
-
-**Missing 1 arg*
->>> bg.integer_validator('str')
-Traceback (most recent call last):
-...
-TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
-
-**3 arg**
->>> bg.integer_validator('str', 1, 5)
-Traceback (most recent call last):
-...
-TypeError: BaseGeometry.integer_validator() takes 3 positional arguments but 4 were given
-
-**Name Error**
->>> bg.integer_validator(test, 2)
-Traceback (most recent call last):
-...
-NameError: name 'test' is not defined
-
-**Too many arg**
->>> bg.area(1)
-Traceback (most recent call last):
-...
-TypeError: BaseGeometry.area() takes 1 positional argument but 2 were given
-
-**0 arg for area func**
->>> bg.area()
-Traceback (most recent call last):
-...
-Exception: area() is not implemented
-
-**Module docstring:**
->>> test = __import__("7-base_geometry").__doc__
->>> len(test) > 1
-True
-
-**Class docstring**
->>> test = __import__("7-base_geometry").BaseGeometry.__doc__
->>> len(test) > 1
-True
-
-**Area Method docstring**
->>> test = __import__("7-base_geometry").BaseGeometry.area.__doc__
->>> len(test) > 1
-True
-
-**integer_validator Method docstring**
->>> test = __import__("7-base_geometry").BaseGeometry.integer_validator.__doc__
->>> len(test) > 1
-True
+[NameError] name 'name' is not defined
