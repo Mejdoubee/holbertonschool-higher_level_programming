@@ -3,6 +3,7 @@ The ``7-base_geometry`` module
 
 Using ``integer_validator``
 -------------------
+
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 >>> bg = BaseGeometry()
 
@@ -28,6 +29,7 @@ Traceback (most recent call last):
 TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
 **Missing 1 arg*
+>>> bg.integer_validator('str')
 Traceback (most recent call last):
 ...
 TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
