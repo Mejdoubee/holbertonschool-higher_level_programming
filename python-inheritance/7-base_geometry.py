@@ -18,7 +18,7 @@ class BaseGeometry:
         '''
         Public instance method that validates value
         '''
-        if not type(value) is int:
-            raise TypeError("{:s} must be an integer".format(name))
+        if not isinstance(value, int):
+            raise TypeError(f"{name} must be an integer")
         if value <= 0:
-            raise ValueError("{:s} must be greater than 0".format(name))
+            raise ValueError(f"{name} must be greater than 0")
