@@ -3,6 +3,8 @@ The ``7-base_geometry`` module
 
 Using ``integer_validator``
 -------------------
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>> bg = BaseGeometry()
 
 **Basic input**
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
