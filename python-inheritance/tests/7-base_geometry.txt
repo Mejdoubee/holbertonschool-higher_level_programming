@@ -34,3 +34,28 @@ Using ``integer_validator``
 ...     print("[{}] {}".format(e.__class__.__name__, e))
 ...
 [ValueError] distance must be greater than 0
+
+
+**passing 0 argument**
+>>> try:
+...     bg.integer_validator()
+... except Exception as e:
+...     print("[{}] {}".format(e.__class__.__name__, e))
+...
+[TypeError] BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+**passing 1 arg**
+>>> try:
+...     bg.integer_validator("hello")
+... except Exception as e:
+...     print("[{}] {}".format(e.__class__.__name__, e))
+...
+[TypeError] BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
+
+**too many arg**
+>>> try:
+...     bg.integer_validator("hello", 5, 5)
+... except Exception as e:
+...     print("[{}] {}".format(e.__class__.__name__, e))
+...
+[TypeError] BaseGeometry.integer_validator() takes 3 positional arguments but 4 were given
