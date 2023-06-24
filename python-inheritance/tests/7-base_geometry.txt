@@ -43,10 +43,8 @@ Using ``integer_validator``
 ...
 [NameError] name 'name' is not defined
 
-**No arg for value**
->>> try:
-...     bg.integer_validator("name", )
-... except Exception as e:
-...     print("[{}] {}".format(e.__class__.__name__, e))
+**0 arg for area func**
+>>> bg.area()
+Traceback (most recent call last):
 ...
-[TypeError] BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
+Exception: area() is not implemented
