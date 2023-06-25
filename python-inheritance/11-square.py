@@ -4,26 +4,28 @@ Module that defines a Square class
 '''
 
 
-Square = __import__('10-square').Square
+Rectangle = __import__('9-rectangle').Rectangle
 
 
-def __init__(self, size):
+class Square(Rectangle):
     '''
-    Instantiation of sqaure class
+    class Square that inherits from Rectangle
     '''
-    self.integer_validator("size", size)
-    self.__size = size
+    def __init__(self, size):
+        '''
+        Instantiation of sqaure class
+        '''
+        self.integer_validator("size", size)
+        self.__size = size
 
+    def area(self):
+        '''
+        Returns the area of the square
+        '''
+        return self.__size ** 2
 
-def area(self):
-    '''
-    Returns the area of the square
-    '''
-    return self.__size ** 2
-
-
-def __str__(self):
-    '''
-    Returns a string representation of the rectangle
-    '''
-    return f"[Rectangle] {self.__size}/{self.__size}"
+    def __str__(self):
+        '''
+        Returns a string representation of the rectangle
+        '''
+        return f"[Rectangle] {self.__size}/{self.__size}"
