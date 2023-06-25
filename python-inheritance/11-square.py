@@ -28,4 +28,4 @@ class Square(Rectangle):
         '''
         Returns a string representation of the rectangle
         '''
-        return f"[Rectangle] {self.__size}/{self.__size}"
+        return str(f"[Rectangle] {self.__size}/{self.__size}")
