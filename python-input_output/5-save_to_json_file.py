@@ -2,7 +2,6 @@
 '''
 Module that define save_to_json_file
 '''
-import json
 to_json = __import__('3-to_json_string').to_json_string
 
 
