@@ -17,13 +17,25 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
+    @staticmethod
+    def validate_value(name, value, min_value=0, status=False):
+        if type(value) is not int:
+            raise TypeError(f"{name} must be an integer")
+        if status:
+            if value < min_value:
+                raise ValueError(f"{name} must be > {min_value}")
+        else:
+            if value <= min_value:
+                raise ValueError(f"{name} must be >= {min_value}")
+        return (value)
+
     @property
     def width(self):
         return self.__width
 
     @width.setter
     def width(self, value):
-        self.__width = value
+        self.__width = self.validate_value("width", value, status=False)
 
     @property
     def height(self):
@@ -31,7 +43,7 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
-        self.__height = value
+        self.__height = self.validate_value("height", value, status=False)
 
     @property
     def x(self):
@@ -39,7 +51,7 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
-        self.__x = value
+        self.__x = self.validate_value("x", value, status=True)
 
     @property
     def y(self):
@@ -47,4 +59,4 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
-        self.__y = value
+        self.__y = self.validate_value("y", value, status=True)
