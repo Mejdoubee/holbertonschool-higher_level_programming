@@ -103,7 +103,7 @@ class Rectangle(Base):
         '''
         returns the dictionary representation of a Rectangle
         '''
-        attributes = ['id', 'x', 'size', 'y']
+        attributes = ['id', 'size', 'x', 'y']
         return {
             i: getattr(self, i) for i in attributes
         }
