@@ -9,6 +9,7 @@ class Rectangle(Base):
     '''
     Inherits class from Base
     '''
+
     def __init__(self, width, height, x=0, y=0, id=None):
         "Class constructor(initialisation)"
         super().__init__(id)
@@ -97,3 +98,12 @@ class Rectangle(Base):
             for key, value in kwargs.items():
                 if key in attributes:
                     setattr(self, key, value)
+
+    def to_dictionary(self):
+        '''
+        returns the dictionary representation of a Rectangle
+        '''
+        attributes = ['x', 'y', 'id', 'height', 'width']
+        return {
+            i: getattr(self, i) for i in attributes
+        }
