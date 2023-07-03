@@ -25,7 +25,7 @@ class Base:
     def to_json_string(list_dictionaries):
         '''
         staticmethod:
-        that returns the JSON string representation of list_dictionaries
+            that returns the JSON string representation of list_dictionaries
         '''
         if list_dictionaries is None or not list_dictionaries:
             return "[]"
@@ -35,7 +35,7 @@ class Base:
     def save_to_file(cls, list_objs):
         '''
         class method:
-        that writes the JSON string representation of list_objs to a file
+            that writes the JSON string representation of list_objs to a file
         '''
         try:
             list_dict = [obj.to_dictionary() for obj in list_objs]
@@ -49,7 +49,7 @@ class Base:
     def from_json_string(json_string):
         '''
         static method:
-        that returns the list of the JSON string representation json_string
+            that returns the list of the JSON string representation json_string
         '''
         if json_string is None or not json_string:
             return []
@@ -67,3 +67,18 @@ class Base:
             dummy = cls(1)
         dummy.update(**dictionary)
         return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        '''
+        class method:
+            that returns a list of instances
+        '''
+        filename = cls.__name__ + '.json'
+        try:
+            with open(filename, 'r') as file:
+                list_dicts = cls.from_json_string(file.read())
+        except FileNotFoundError:
+            return []
+
+        return [cls.create(**dict_obj) for dict_obj in list_dicts]
