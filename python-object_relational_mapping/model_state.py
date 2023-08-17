@@ -12,7 +12,7 @@ Base = declarative_base()
 
 class State(Base):
     '''
-    Inherits class from Base
+    Inherits from Base
     '''
     __tablename__ = 'states'
     id = Column(Integer, primary_key=True)
