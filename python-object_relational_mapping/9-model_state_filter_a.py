@@ -13,7 +13,8 @@ if __name__ == '__main__':
     engine = create_engine(
         f'mysql+mysqldb://{argv[1]}:{argv[2]}@localhost:3306/{argv[3]}')
     Base.metadata.create_all(engine)
-    Session = sessionmaker(bind=engine)
+    Session = sessionmaker()
+    Session.configure(bind=engine)
     session = Session()
     for state in session.query(State).filter(
             State.name.like('%a%')).order_by(State.id):
