@@ -14,7 +14,6 @@ if __name__ == '__main__':
         f'mysql+mysqldb://{argv[1]}:{argv[2]}@localhost:3306/{argv[3]}')
     Session = sessionmaker(bind=engine)
     session = Session()
-    for state in session.query(State).order_by(State.id).all():
+    for state in session.query(State).order_by(State.id):
         if 'a' in state.name:
             print(f'{state.id}: {state.name}')
-    session.close()
